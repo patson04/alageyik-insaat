@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAGEYİK İNŞAAT</title>
+    <meta name="description" content="Alageyik İnşaat; villa yapımı, ofis yapımı, mantolama, kaba sıva, alçı sıva, boya badana ve kentsel dönüşüm hizmetleri sunmaktadır.">
+    <meta name="keywords" content="Alageyik İnşaat, Ankara İnşaat, Villa Yapımı, Mantolama, Boya Badana, Alçı Sıva, Kaba Sıva, Ofis Yapımı, Kentsel Dönüşüm">
+    <meta name="author" content="ALAGEYİK İNŞAAT">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ff9900">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>ALAGEYİK İNŞAAT</h2>
+        <ul id="menu">
+            <li><a href="#" onclick="sayfaGoster('hero')">Ana Sayfa</a></li>
+            <li><a href="#" onclick="sayfaGoster('hakkimizda')">Hakkımızda</a></li>
+            <li><a href="#" onclick="sayfaGoster('hizmetler')">Hizmetler</a></li>
+            <li><a href="#" onclick="sayfaGoster('projeler')">Projeler</a></li>
+            <li><a href="#" onclick="sayfaGoster('iletisim')">İletişim</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="menuAcKapat()">☰</div>
+    </nav>
+
+    <!-- ANA SAYFA (HERO) -->
+    <section id="hero" class="sayfa aktif">
+        <h1>Geleceği Sağlam Temeller Üzerine İnşa Ediyoruz</h1>
+        <p>Alageyik İnşaat ile modern, güvenli ve estetik yaşam alanları.</p>
+        <a href="#" onclick="sayfaGoster('projeler')"><button>Projelerimizi İnceleyin</button></a>
+    </section>
+
+    <!-- HAKKIMIZDA -->
+    <section id="hakkimizda" class="sayfa">
+        <h2>Hakkımızda</h2>
+        <div class="hakkimizda-icerik-alani">
+            <div class="kurucu-container">
+                <div class="ekip-kart kurucu-kart">
+                    <img src="resimler/ekip yöneticisi.jpeg" alt="Selçuk Alageyik" onclick="resimBuyut(this)" loading="lazy" decoding="async">
+                    <h4>Selçuk Alageyik</h4>
+                    <span>Kurucu & Proje Müdürü</span>
+                </div>
+            </div>
+            <p class="hakkimizda-metin">
+                Merhabalar, ben Selçuk Alageyik. Alageyik İnşaat'ın kurucusuyum. Küçük yaşta inşaat sektörüne girdim ve bu zamana kadar ekibimle birlikte birçok projeye imza attık. Selçuk Alageyik olarak hayatta önem verdiğim iki temel ilke vardır: Birincisi bir iş yapılacaksa en iyisinin yapılması gerektiği, ikincisi ise dürüstlüktür. Bu iki değer çerçevesinde size en iyi şekilde hizmet vermeye çalışıyoruz. Sağlam kadromuzla her zaman taleplerinizi bekliyoruz. Hepinize sevgiler, saygılar; yeni projelerde görüşmek üzere...
+            </p>
+        </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section id="hizmetler" class="sayfa">
+        <h2>Hizmetlerimiz</h2>
+        <div class="hizmet-kutu-grubu">
+            <div class="hizmet-kutu">
+                <h3>Villa Yapımı</h3>
+                <p>Hayallerinizdeki lüks ve konforlu villaları kişiye özel mimari tasarımlarla hayata geçiriyoruz.</p>
+            </div>
+            <div class="hizmet-kutu">
+                <h3>Ofis Yapımı</h3>
+                <p>İş yeriniz için verimli, modern, prestijli ve fonksiyonel çalışma alanları inşa ediyoruz.</p>
+            </div>
+            <div class="hizmet-kutu">
+                <h3>Mantolama</h3>
+                <p>Binalarınızın ısı yalıtımını sağlayarak enerji tasarrufu sunan yüksek kaliteli mantolama hizmetleri.</p>
+            </div>
+            <div class="hizmet-kutu">
+                <h3>Kaba Sıva</h3>
+                <p>Duvar yüzeylerini düzleştiren, eğrilikleri kapatan ve yapının dayanıklılığını artıran profesyonel kaba sıva uygulamaları.</p>
+            </div>
+            <div class="hizmet-kutu">
+                <h3>Alçı Sıva</h3>
+                <p>İç mekan duvar ve tavanlarınız için pürüzsüz, sağlam ve estetik alçı sıva uygulamaları.</p>
+            </div>
+            <div class="hizmet-kutu">
+                <h3>Boya Badana</h3>
+                <p>Yapılarınızın iç ve dış cephelerine profesyonel dokunuşlar yaparak estetik bir görünüm kazandırıyoruz.</p>
+            </div>
+            <div class="hizmet-kutu">
+                <h3>Kentsel Dönüşüm</h3>
+                <p>Eski yapılarınızı güvenli, depreme dayanıklı ve yüksek değerli modern yaşam alanlarına dönüştürüyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projeler" class="sayfa">
+        <h2>Projelerimiz</h2>
+        <div class="projeler">
+            <div class="proje"><img src="resimler/proje1.jpeg" alt="Proje 1" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+            <div class="proje"><img src="resimler/proje2.jpeg" alt="Proje 2" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+            <div class="proje"><img src="resimler/proje3.jpeg" alt="Proje 3" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+            <div class="proje"><img src="resimler/proje4.jpeg" alt="Proje 4" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+            <div class="proje"><img src="resimler/proje5.jpeg" alt="Proje 5" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+            <div class="proje"><img src="resimler/proje6.jpeg" alt="Proje 6" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+            <div class="proje"><img src="resimler/proje7.jpeg" alt="Proje 7" onclick="resimBuyut(this)" loading="lazy" decoding="async"></div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim" class="sayfa">
+        <h2>İletişim</h2>
+        <div class="iletisim-detay">
+            <p><strong>Adres:</strong> Beyazıt Mahallesi Huzur Sokak 15C Akyurt / Ankara</p>
+            <p><strong>Telefon:</strong> +90 545 362 04 14</p>
+        </div>
+        <div class="harita">
+            <iframe
+                src="https://www.google.com/maps?q=Beyazıt+Mahallesi+Huzur+Sokak+15C+Akyurt+Ankara&output=embed"
+                width="100%"
+                height="280"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- RESİM TAM EKRAN (MODAL) PENCERESİ -->
+    <div id="resimModal" class="modal" onclick="modalKapat()">
+        <span class="kapat">&times;</span>
+        <img class="modal-icerik" id="tamEkranResim">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-icerik">
+            <h3>ALAGEYİK İNŞAAT</h3>
+            <p>Güven, kalite ve sağlam işçilik anlayışıyla Ankara ve çevresinde profesyonel inşaat hizmetleri sunuyoruz.</p>
+            <p><strong>Telefon:</strong> +90 545 362 04 14</p>
+            <p><strong>Adres:</strong> Beyazıt Mahallesi Huzur Sokak 15C Akyurt / Ankara</p>
+            <hr>
+            <p class="copyright">© 2026 ALAGEYİK İNŞAAT | Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".sayfa").forEach(function(sayfa){
+                sayfa.style.display = "none";
+            });
+            document.getElementById("hero").style.display = "flex";
+        });
+
+        function sayfaGoster(sayfaId) {
+            document.querySelectorAll(".sayfa").forEach(function(sayfa){
+                sayfa.style.display = "none";
+            });
+            let hedefSayfa = document.getElementById(sayfaId);
+            if(sayfaId === "hero"){
+                hedefSayfa.style.display = "flex";
+            }else{
+                hedefSayfa.style.display = "block";
+            }
+        }
+
+        function menuAcKapat(){
+            let menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+
+        document.querySelectorAll("#menu a").forEach(item => {
+            item.addEventListener("click", () => {
+                let menu = document.getElementById("menu");
+                if (menu.classList.contains("active")) {
+                    menu.classList.remove("active");
+                }
+            });
+        });
+
+        function resimBuyut(resimElementi){
+            let modal = document.getElementById("resimModal");
+            let modalResim = document.getElementById("tamEkranResim");
+            modal.style.display = "block";
+            modalResim.src = resimElementi.src;
+        }
+
+        function modalKapat(){
+            document.getElementById("resimModal").style.display = "none";
+        }
+
+        document.addEventListener("keydown", function(event){
+            if(event.key === "Escape"){
+                modalKapat();
+            }
+        });
+    </script>
+    <a class="whatsapp" href="https://wa.me/905453620414" target="_blank">💬</a>
+</body>
+</html>
